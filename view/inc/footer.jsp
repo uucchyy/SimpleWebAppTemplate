@@ -3,7 +3,7 @@
 <footer class="page-footer orange">
 	<div class="footer-copyright">
 		<div class="container">
-		    &copy; uchy.me 2018 -
+		    &copy; example.com 2018 -
 		</div>
 	</div>
 </footer>

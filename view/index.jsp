@@ -28,7 +28,6 @@
 
 			</div>
 			<div class="four columns">
-				<jsp:include page="./inc/right-column.jsp"></jsp:include>
 			</div>
 		</div>
 
