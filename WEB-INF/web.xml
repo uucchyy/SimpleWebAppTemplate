@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+        xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+        version="3.1">
+
+	<servlet>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <servlet-class>com.example.servlet.DispatcherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/notfound.html</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.html</location>
+	</error-page>
+
+	<security-constraint>
+	    <web-resource-collection>
+    		<web-resource-name>jsp-file</web-resource-name>
+    		<url-pattern>/view/*</url-pattern>
+	    </web-resource-collection>
+    	<auth-constraint/>
+	</security-constraint>
+
+</web-app>
