@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Context displayName="DBS" docBase="app" path="/"
+  reloadable="true">
+  <Resource name="jdbc/Dbs" auth="Container"
+    type="javax.sql.DataSource" username="dbs" password="passpass"
+    driverClassName="org.mariadb.jdbc.Driver"
+    url="jdbc:mariadb://192.168.56.123:3306/fss?useUnicode=true&amp;characterEncoding=UTF-8" maxActive="4" maxWait="5000" maxIdle="2"
+    validationQuery="SELECT count(*) FROM item" />
+</Context>
